@@ -28,7 +28,7 @@ int main()
 	cout << fixed;
 	    cout << "-------------------------------------------------" << endl;
 	    cout << "|" << setw(5) << "x" << " |"
-		            << setw(10) << "log10(x)" << " |"
+		            << setw(10) << "ln(x)" << " |"
 		            << setw(7) << "S" << " |"
 		            << setw(5) << "n" << " |"
 		            << endl;
@@ -39,7 +39,7 @@ int main()
 		s = S(x, eps, n, s);
 
 		cout << "|" << setw(7) << setprecision(2) << x << " |"
-			        << setw(10) << setprecision(5) << log10(x) << " |"
+			        << setw(10) << setprecision(5) << log(x) << " |"
 			        << setw(10) << setprecision(5) << s << " |"
 			        << setw(5) << n << " |"
 			        << endl;
