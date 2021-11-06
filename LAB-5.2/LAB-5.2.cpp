@@ -53,7 +53,7 @@ int main()
 double S(const double x, const double eps, int& n, double s)
 {
 	n = 0; // вираз залежить від умови завдання варіанту
-	double a = 1; // вираз залежить від умови завдання варіанту
+	double a = x - 1; // вираз залежить від умови завдання варіанту
 	s = a;
 	do {
 		n++;
@@ -65,7 +65,7 @@ double S(const double x, const double eps, int& n, double s)
 
 double A(const double x, const int n, double a)
 {
-	double R = (n - n * x) / (n + 1); // вираз залежить від умови завдання варіанту
+	double R = (-1 * (x - 1) * n) / (n + 1); // вираз залежить від умови завдання варіанту
 	a *= R;
 	return a;
 }
